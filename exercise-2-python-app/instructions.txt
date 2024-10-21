@@ -1,0 +1,12 @@
+1. On your terminal, go to your application's source directory. 
+2. Create the Dockerfile.
+3. Define the base image. The base image is `python:3.10-slim`.
+4. Set the work directory. The work directory is `/app`.
+5. Copy the necessary file for the app to work. The necessary file is `app.py`.
+6. The app needs some dependencies. You need to execute this command: `pip install --no-cache-dir fastapi uvicorn` 
+7. For quality of life, define which port the app is exposed to.
+8. Define the command to be executed when the image is being run. The command is `python app.py`.
+9. Now, build the container image. Name the image `python-app`.
+10. Finally, run the image. Expose it to the right external and internal ports. Name the container `pyapp`.
+11. Open the application in a browser. You should see a json output saying `{"message":"Welcome to my Python app!"}`.
+12. Congrats!
